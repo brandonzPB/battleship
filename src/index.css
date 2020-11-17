@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  background: linear-gradient(0.25turn, 
+    rgba(27,79,211,0.6) 25%, 
+    rgba(10,53,165,0.6) 66%, 
+    rgba(1,17,57,0.6) 100%),
+    url('./images/submarine.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 20px;
+}
+
+.App {
+  width: 95vw;
+  height: 95vh;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.set-players-container {
+  width: auto;
+  height: auto;
+}
+
+.set-players-btn {
+  width: 300px;
+  height: 150px;
+  font-size: 2rem;
+  color: red;
+  text-shadow: 1px 1px black;
+  font-family: 'Black Ops One', cursive;
+  border: 2px groove black;
+  background: rgb(151, 151, 151);
+}
+
+.set-players-btn:hover {
+  background: rgb(105, 105, 105);
+  color: rgb(255, 31, 31);
+}
+
+.set-players-btn:active {
+  background: rgb(73, 73, 73);
+  color: rgb(248, 70, 70);
+}
+
+.start-btn-container {}
+
+.start-btn {
+  font-family: 'Black Ops One', cursive;
+  background: rgb(0, 0, 0, 0.6);
+  color: red;
+  width: 200px;
+  height: 100px;
+  font-size: 1.25rem;
+}
+
+/* PLAYER FORM */
+
+.start-over-container {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+}
+
+.start-over-btn {
+  font-family: 'Black Ops One', cursive;
+  width: 200px;
+  height: 100px;
+  font-size: 1.25rem;
+  background: rgb(78, 78, 78);
+  color: white;
+}
+
+.player-form {
+  font-family: 'Black Ops One', cursive;
+}
+
+.name-label {
+  font-size: 2.25rem;
+  color: white;
+  text-shadow: 1px 1px black;
+  display: block;
+}
+
+.name-input {
+  font-size: 1.75rem;
+  display: block;
+  margin: 20px auto;
+  font-family: 'Black Ops One', cursive;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.submit-form-btn {
+  width: 120px;
+  height: 60px;
+  background: rgba(255, 0, 0, 0.6);
+  color: white;
+  margin: 30px auto;
+  font-size: 1.25rem;
+  font-family: 'Black Ops One', cursive;
+}
+
+.game-container {
+  font-family: 'Black Ops One', cursive;
+  color: white;
+}
+
+.tile-container { /* Contains both the enemy map and the personal map */
+}
+
+.loading-container {}
+
+.loading-container h1 {
+  font-family: 'Black Ops One', cursive;
+  color: white;
+}
+
+/* TILE MAP */
+
+.target-header {
+  font-family: 'Black Ops One', cursive;
+  color: red;
+}
+
+.enemy {
+  font-family: 'Black Ops One', cursive;
+  color: rgb(204, 13, 13);
+}
+
+.tile-display {
+  margin: 0 auto;
+  width: 650px;
+  max-width: 650px;
+  min-width: 650px;
+  height: 650px;
+  max-height: 650px;
+  min-height: 650px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1300px) {
+  .tile-display {
+    margin-top: 50px;
+  }
+
+  .tile-container {
+    position: relative;
+    top: 50px;
+  }
+
+  .game-container {
+    position: relative;
+    top: 250px;
+  }
+}
+
+.tile-display h2 {}
+
+.numbers {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: 1.5rem;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50px;
+  min-width: 50px;
+  max-width: 50px;
+  height: 450px;
+  max-height: 450px;
+  min-height: 450px;
+  position: absolute;
+  font-family: 'Black Ops One', cursive;
+}
+
+.number {
+  margin: 0 auto;
+  padding: 6px 0;
+}
+
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  width: 550px;
+  min-width: 550px;
+  max-width: 550px;
+  height: 450px;
+  min-height: 450px;
+  max-height: 450px;
+  margin: 0 auto;
+}
+
+.letters {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 550px;
+  min-width: 550px;
+  max-width: 550px;
+  height: 50px;
+  max-height: 50px;
+  min-height: 50px;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  position: absolute;
+  left: 47px;
+  font-family: 'Black Ops One', cursive;
+  position: relative;
+  left: 0;
+}
+
+.letter {
+  margin: 0 auto;
+}
+
+.ship-preview,
+.current-ship {
+  width: 46px;
+  height: 46px;
+  border: 2px solid black;
+  background-color: rgba(123,199,247, 0.8);
+}
+
+.blank-tile {
+  width: 46px;
+  height: 46px;
+  border: 2px solid black;
+}
+
+.preview {
+  width: 46px;
+  height: 46px;
+  border: 2px solid black;
+  background-color: rgba(150,18,6, 0.3);
+}
+
+.tile {
+  width: 46px;
+  height: 46px;
+  border: 2px solid black;
+  background-color: rgb(123,199,247);
+}
+
+.hover {
+  background-color: rgba(150,18,6, 0.3);
+}
+
+.current-ship,
+.own-ship {
+  background-color: rgb(150,18,6);
+}
+
+.hit {
+  background-color: black;
+}
+
+.splash {
+  background-color: white;
+}
+
+/* Winner Display */
+
+.game-result {}
+
+.game-result h1 {
+  font-family: 'Black Ops One', cursive;
+}
+
+.winner-display {}
+
+.winner-display h1 {
+  font-family: 'Black Ops One', cursive;
+}
+
+.legend-container {
+  margin: 0 auto;
+}
+
+.splash-info {
+  width: 130px;
+  height: auto;
+  display: flex;
+  margin: 0 auto 20px auto;
+}
+
+.splash-text {
+  text-align: right;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+
+.splash-legend-tile {
+  width: 25px;
+  height: 25px;
+  background: white;
+  border: 1px solid black;
+}
+
+.hit-info {
+  width: 130px;
+  height: auto;
+  display: flex;
+  margin: 0 auto 20px auto;
+}
+
+.hit-text {
+  text-align: right;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+
+.hit-legend-tile {
+  width: 25px;
+  height: 25px;
+  background: black;
+  border: 1px solid white;
+}
