@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route } from 'react-router-dom';
 import GameContextProvider from './contexts/GameContext';
 import StartScreen from './components/StartScreen';
 import PlayerForm from './components/PlayerForm';
@@ -8,7 +8,7 @@ import StartOverButton from './components/StartOverButton';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter basename="/">
       <div className="App">
         <GameContextProvider>
           <Route exact path="/" component={StartScreen}/>
@@ -17,7 +17,7 @@ function App() {
           <Route exact path="/play" component={Game}/>
         </GameContextProvider>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
