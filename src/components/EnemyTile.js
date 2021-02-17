@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './enemyTile.css';
+
 const EnemyTile = ({ tile, hitTile, nextTurn }) => {
   let backgroundStyle;
   if (tile.isHit) backgroundStyle = 'black';

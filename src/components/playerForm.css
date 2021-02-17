@@ -1,0 +1,125 @@
+#player-form-container {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.player-form {
+  font-family: 'Black Ops One', cursive;
+}
+
+.name-label {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 1px 1px black;
+  display: block;
+  width: auto;
+}
+
+.name-input {
+  font-size: 2rem;
+  display: block;
+  margin: 2rem auto;
+  font-family: 'Black Ops One', cursive;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.submit-form-btn {
+  width: auto;
+  height: auto;
+  padding: 1rem 2rem;
+  background: rgba(255, 0, 0, 0.6);
+  color: white;
+  margin: 3rem auto;
+  font-size: 1.25rem;
+  font-family: 'Black Ops One', cursive;
+}
+
+.submit-form-btn:hover {
+  background: rgba(255, 44, 44, 0.6);
+}
+
+.start-btn-container {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.start-btn {
+  font-family: 'Black Ops One', cursive;
+  background: rgb(0, 0, 0, 0.6);
+  color: red;
+  width: 18rem;
+  height: 7rem;
+  font-size: 2rem;
+}
+
+.start-btn:hover {
+  background: rgba(32, 32, 32, 0.6);
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  #player-form-container {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+  
+  .player-form {
+    font-family: 'Black Ops One', cursive;
+  }
+  
+  .name-label {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 1px 1px black;
+    display: block;
+    width: auto;
+  }
+  
+  .name-input {
+    font-size: 2rem;
+    display: block;
+    margin: 2rem auto;
+    font-family: 'Black Ops One', cursive;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .submit-form-btn {
+    width: auto;
+    height: auto;
+    padding: 1rem 2rem;
+    background: rgba(255, 0, 0, 0.6);
+    color: white;
+    margin: 3rem auto;
+    font-size: 2rem;
+    font-family: 'Black Ops One', cursive;
+  }
+  
+  .start-btn-container {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+  
+  .start-btn {
+    font-family: 'Black Ops One', cursive;
+    background: rgb(0, 0, 0, 0.6);
+    color: red;
+    width: 18rem;
+    height: 7rem;
+    font-size: 2rem;
+  }
+}

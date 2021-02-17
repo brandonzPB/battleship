@@ -5,6 +5,8 @@ import { GameContext } from '../contexts/GameContext';
 import Loading from './Loading';
 import WinnerDisplay from './WinnerDisplay';
 
+import './game.css';
+
 const Game = () => {
   const { game } = useContext(GameContext);
 

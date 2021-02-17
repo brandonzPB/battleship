@@ -4,6 +4,8 @@ import OwnTile from './OwnTile';
 import Letter from './Letter';
 import Number from './Number';
 
+import './ownMap.css';
+
 const OwnMap = ({ thisPlayer, winner, loser }) => {
   const numberArr = numArr();
 
@@ -48,12 +50,15 @@ const OwnMap = ({ thisPlayer, winner, loser }) => {
   return (
     <div className="tile-display">
       <h2>These are your ships, {playerInfo.player}</h2>
+
       <div className="numbers">
         {NumberComponents}
       </div>
+
       <div className="tiles">
         {TileComponents}
       </div>
+      
       <div className="letters">
         {LetterComponents}
       </div>

@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import { GameContext } from '../contexts/GameContext';
 
+import './winner.css';
+
 const WinnerDisplay = () => {
   const { winner, loser } = useContext(GameContext);
 

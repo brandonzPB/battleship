@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { GameContext } from '../contexts/GameContext';
 import { gameBoard, getShipPlacements } from '../modules/gameBoard';
 
+import './playerForm.css';
+
 const PlayerForm = () => {
   const [player, setPlayer] = useState('');
   const { game, dispatch, winner } = useContext(GameContext);
@@ -45,18 +47,24 @@ const PlayerForm = () => {
   }
 
   return (
-    <form onSubmit={addPlayer} className="player-form">
-      <label className="name-label">Enter Name: </label>
-      <input 
-        type="text"
-        name="player"
-        value={player}
-        onChange={handleChange}
-        placeholder='Captain Morgan'
-        className="name-input"
-      />
-      <button className="submit-form-btn">Submit</button>
-    </form>
+    <div id="player-form-container">
+      <form onSubmit={addPlayer} className="player-form">
+        <span className="name-label">
+          {
+            game.length === 0 ? 'Enter First Name: ' : 'Enter Second Name: '
+          }
+        </span>
+        <input 
+          type="text"
+          name="player"
+          value={player}
+          onChange={handleChange}
+          placeholder='Captain Morgan'
+          className="name-input"
+        />
+        <button className="submit-form-btn">Submit</button>
+      </form>
+    </div>
   )
 }
 

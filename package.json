@@ -1,6 +1,5 @@
 {
   "name": "battleship",
-  "homepage": "https://brandonzpb.github.io/battleship/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

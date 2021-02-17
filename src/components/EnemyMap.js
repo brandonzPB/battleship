@@ -5,6 +5,8 @@ import Letter from './Letter';
 import Number from './Number';
 import { GameContext } from '../contexts/GameContext';
 
+import './enemyMap.css';
+
 const EnemyMap = ({ thisPlayer, thisEnemy, nextTurn, winner }) => {
   const { sinkTile, missedShot } = useContext(GameContext);
   const numberArr = numArr();
@@ -75,12 +77,15 @@ const EnemyMap = ({ thisPlayer, thisEnemy, nextTurn, winner }) => {
   return (
     <div className="tile-display">
       <h2 className="target-header">Choose a target</h2>
+      
       <div className="numbers enemy">
         {NumberComponents}
       </div>
+
       <div className="tiles">
         {TileComponents}
       </div>
+
       <div className="letters enemy">
         {LetterComponents}
       </div>

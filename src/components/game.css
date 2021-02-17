@@ -1,0 +1,64 @@
+.game-container {
+  font-family: 'Black Ops One', cursive;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: auto;
+}
+
+.tile-container { /* Contains both the enemy map and the personal map */
+  display: flex;
+  flex: 1;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.legend-container {
+  margin: 0 auto;
+}
+
+.splash-info {
+  width: 13rem;
+  height: auto;
+  display: flex;
+  margin: 0 auto 2rem auto;
+}
+
+.splash-text {
+  text-align: right;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+
+.splash-legend-tile {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid black;
+}
+
+.hit-info {
+  width: 13rem;
+  height: auto;
+  display: flex;
+  margin: 0 auto 2rem auto;
+}
+
+.hit-text {
+  text-align: right;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+
+.hit-legend-tile {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: black;
+  border: 1px solid white;
+}

@@ -8,7 +8,7 @@ import StartOverButton from './components/StartOverButton';
 
 function App() {
   return (
-    <HashRouter basename="/">
+    <BrowserRouter>
       <div className="App">
         <GameContextProvider>
           <Route exact path="/" component={StartScreen}/>
@@ -17,7 +17,7 @@ function App() {
           <Route exact path="/play" component={Game}/>
         </GameContextProvider>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

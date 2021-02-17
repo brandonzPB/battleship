@@ -1,0 +1,89 @@
+.set-players-container {
+  width: auto;
+  height: auto;
+}
+
+#welcome-header-container {
+  display: block;
+  width: 50rem;
+  height: auto;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+}
+
+#welcome-header {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 6rem;
+  color: white;
+  font-family: 'Black Ops One', cursive;
+}
+
+.set-players-btn {
+  width: 25rem;
+  height: 12rem;
+  font-size: 4rem;
+  color: red;
+  text-shadow: 1px 1px black;
+  font-family: 'Black Ops One', cursive;
+  border: 2px groove black;
+  background: rgb(151, 151, 151);
+}
+
+.set-players-btn:hover {
+  background: rgb(105, 105, 105);
+  color: rgb(255, 31, 31);
+}
+
+.set-players-btn:active {
+  background: rgb(73, 73, 73);
+  color: rgb(248, 70, 70);
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .set-players-container {
+    width: auto;
+    height: auto;
+  }
+  
+  #welcome-header-container {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+  }
+  
+  #welcome-header {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    font-family: 'Black Ops One', cursive;
+  }
+  
+  .set-players-btn {
+    width: 25rem;
+    height: 12rem;
+    font-size: 4rem;
+    color: red;
+    text-shadow: 1px 1px black;
+    font-family: 'Black Ops One', cursive;
+    border: 2px groove black;
+    background: rgb(151, 151, 151);
+  }
+  
+  .set-players-btn:hover {
+    background: rgb(105, 105, 105);
+    color: rgb(255, 31, 31);
+  }
+  
+  .set-players-btn:active {
+    background: rgb(73, 73, 73);
+    color: rgb(248, 70, 70);
+  }
+}

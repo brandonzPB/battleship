@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './ownTile.css';
+
 const OwnTile = ({ tile }) => {
   let backgroundStyle;
   if (tile.isHit) backgroundStyle = 'black';
