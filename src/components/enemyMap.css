@@ -1,11 +1,7 @@
 .tile-display {
   margin: 0 auto;
-  width: 65rem;
-  max-width: 65rem;
-  min-width: 65rem;
-  height: 65rem;
-  max-height: 65rem;
-  min-height: 65rem;
+  width: 48rem;
+  height: 50rem;
   display: inline-block;
 }
 
@@ -24,16 +20,11 @@
   flex: 1;
   flex-direction: column;
   font-size: 1.5rem;
-  float: left;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   width: 5rem;
-  min-width: 5rem;
-  max-width: 5rem;
-  height: 45rem;
-  max-height: 45rem;
-  min-height: 45rem;
+  height: 31rem;
   position: absolute;
   font-family: 'Black Ops One', cursive;
 }
@@ -45,12 +36,8 @@
   flex: 1;
   align-items: center;
   justify-content: center;
-  width: 55rem;
-  min-width: 55rem;
-  max-width: 55rem;
-  height: 45rem;
-  min-height: 45rem;
-  max-height: 45rem;
+  width: 40rem;
+  height: 31rem;
   margin: 0 auto;
 }
 
@@ -60,12 +47,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 55rem;
-  min-width: 55rem;
-  max-width: 55rem;
+  width: 38rem;
   height: 5rem;
-  max-height: 5rem;
-  min-height: 5rem;
   font-size: 1.5rem;
   margin: 0 auto;
   position: absolute;
