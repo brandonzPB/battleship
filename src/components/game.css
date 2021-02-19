@@ -2,7 +2,7 @@
   font-family: 'Black Ops One', cursive;
   color: white;
   display: block;
-  margin: -38rem auto 0 auto;
+  margin: 10rem auto 0 auto;
   height: auto;
   width: 100%;
 }
@@ -21,6 +21,9 @@
 
 .legend-container {
   margin: 0 auto;
+  position: absolute;
+  left: 55rem;
+  top: 50rem;
 }
 
 .splash-info {
@@ -82,6 +85,10 @@
   
   .legend-container {
     margin: 0 auto;
+    position: static;
+    display: block;
+    text-align: center;
+    width: 100%;
   }
   
   .splash-info {
@@ -94,12 +101,12 @@
   .splash-text {
     text-align: right;
     margin: 0 auto;
-    font-size: 1.25rem;
+    font-size: 2.25rem;
   }
   
   .splash-legend-tile {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     background: white;
     border: 1px solid black;
   }
@@ -114,12 +121,12 @@
   .hit-text {
     text-align: right;
     margin: 0 auto;
-    font-size: 1.25rem;
+    font-size: 2.25rem;
   }
   
   .hit-legend-tile {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     background: black;
     border: 1px solid white;
   }  

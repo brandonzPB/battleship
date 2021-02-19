@@ -1,5 +1,31 @@
-.game-result {}
+.winner-header-container {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+}
 
-.game-result h1 {
+#winner-header {
+  font-size: 4rem;
+  color: white;
+  font-weight: 400;
   font-family: 'Black Ops One', cursive;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .winner-header-container {
+    display: block;
+    margin: -35rem auto;
+    width: auto;
+    height: auto;
+  }
+  
+  #winner-header {
+    font-size: 3.25rem;
+    color: white;
+    font-weight: 400;
+    font-family: 'Black Ops One', cursive;
+  }
 }

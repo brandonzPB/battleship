@@ -60,4 +60,64 @@
 
 /* MOBILE */
 
-@media (max-width: 900px) {}
+@media (max-width: 900px) {
+  .tile-display {
+    margin: 0 auto;
+    width: 48rem;
+    height: 50rem;
+    display: block;
+  }
+  
+  .target-header {
+    font-family: 'Black Ops One', cursive;
+    color: red;
+  }
+  
+  .enemy {
+    font-family: 'Black Ops One', cursive;
+    color: rgb(204, 13, 13);
+  }
+  
+  .numbers {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 5rem;
+    height: 31rem;
+    position: absolute;
+    font-family: 'Black Ops One', cursive;
+  }
+  
+  .tiles {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 40rem;
+    height: 31rem;
+    margin: 0 auto;
+  }
+  
+  .letters {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 38rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    position: absolute;
+    left: 47px;
+    font-family: 'Black Ops One', cursive;
+    position: relative;
+    left: 0;
+  }
+}

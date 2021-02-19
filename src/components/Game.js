@@ -3,7 +3,6 @@ import EnemyMap from './EnemyMap';
 import OwnMap from './OwnMap';
 import { GameContext } from '../contexts/GameContext';
 import Loading from './Loading';
-import WinnerDisplay from './WinnerDisplay';
 
 import './game.css';
 
@@ -57,7 +56,7 @@ const Game = () => {
       });
 
       toggleCheck();
-    }, 1400);
+    }, 50); // 1400
 
     return () => clearTimeout(timer);
   }, [turn]);
@@ -69,7 +68,7 @@ const Game = () => {
         else if (isOver === 'loser') setResults('loser');
 
       toggleLoading();
-    }, 1800);
+    }, 100); // 1800
   }, [check]);
 
   const getNextPlayer = id => {

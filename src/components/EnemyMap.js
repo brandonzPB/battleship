@@ -7,6 +7,12 @@ import { GameContext } from '../contexts/GameContext';
 
 import './enemyMap.css';
 
+const kaboomSrc = require('../audio/kaboom.mp3');
+const kaboomSound = new Audio(kaboomSrc);
+
+const splooshSrc = require('../audio/sploosh.mp3');
+const splooshSound = new Audio(splooshSrc);
+
 const EnemyMap = ({ thisPlayer, thisEnemy, nextTurn, winner }) => {
   const { sinkTile, missedShot } = useContext(GameContext);
   const numberArr = numArr();
@@ -26,11 +32,19 @@ const EnemyMap = ({ thisPlayer, thisEnemy, nextTurn, winner }) => {
       // occupied by active ship tile
       console.log('hit');
 
+      kaboomSound.load();
+        kaboomSound.currentTime = 0;
+        kaboomSound.play();
+
       sinkTile(x, y, id);
       return 'hit';
     } else if (enemyPTile[0].isFree && !playTile[0].isHit && !playTile[0].isSplash) {
       // not occupied by anything
       console.log('splash');
+
+      splooshSound.load();
+        splooshSound.currentTime = 0;
+        splooshSound.play();
 
       missedShot(x, y, id);
       return 'splash';

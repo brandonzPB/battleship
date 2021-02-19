@@ -6,6 +6,9 @@ import Number from './Number';
 
 import './ownMap.css';
 
+const winSrc = require('../audio/victory.mp3');
+const winSound = new Audio(winSrc);
+
 const OwnMap = ({ thisPlayer, winner, loser }) => {
   const numberArr = numArr();
 
@@ -40,9 +43,13 @@ const OwnMap = ({ thisPlayer, winner, loser }) => {
   });
 
   if (winner.id.length > 0) {
+    winSound.load();
+      winSound.currentTime = 0;
+      winSound.play();
+      
     return (
-      <div className="game-result">
-        <h1>Congratulations to {winner.id} for defeating {loser.id}!</h1>
+      <div className="winner-header-container">
+        <h1 id="winner-header">Congratulations to {winner.id} for defeating {loser.id}!</h1>
       </div>
     )
   }
