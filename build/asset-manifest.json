@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/battleship/static/css/main.e043a7c1.chunk.css",
-    "main.js": "/battleship/static/js/main.01a7e141.chunk.js",
-    "main.js.map": "/battleship/static/js/main.01a7e141.chunk.js.map",
-    "runtime-main.js": "/battleship/static/js/runtime-main.9e463cc9.js",
-    "runtime-main.js.map": "/battleship/static/js/runtime-main.9e463cc9.js.map",
-    "static/js/2.f47761fb.chunk.js": "/battleship/static/js/2.f47761fb.chunk.js",
-    "static/js/2.f47761fb.chunk.js.map": "/battleship/static/js/2.f47761fb.chunk.js.map",
-    "index.html": "/battleship/index.html",
-    "precache-manifest.92d53c9e737cf711c41a2d59f967f581.js": "/battleship/precache-manifest.92d53c9e737cf711c41a2d59f967f581.js",
-    "service-worker.js": "/battleship/service-worker.js",
-    "static/css/main.e043a7c1.chunk.css.map": "/battleship/static/css/main.e043a7c1.chunk.css.map",
-    "static/js/2.f47761fb.chunk.js.LICENSE.txt": "/battleship/static/js/2.f47761fb.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/battleship/static/media/submarine.f1055bbd.jpg"
+    "main.css": "/static/css/main.73f103ff.chunk.css",
+    "main.js": "/static/js/main.f6d74d75.chunk.js",
+    "main.js.map": "/static/js/main.f6d74d75.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.02638610.js",
+    "runtime-main.js.map": "/static/js/runtime-main.02638610.js.map",
+    "static/js/2.2cc1b66c.chunk.js": "/static/js/2.2cc1b66c.chunk.js",
+    "static/js/2.2cc1b66c.chunk.js.map": "/static/js/2.2cc1b66c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.51b42132dce28a0a1486b47c0b57c2f0.js": "/precache-manifest.51b42132dce28a0a1486b47c0b57c2f0.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.73f103ff.chunk.css.map": "/static/css/main.73f103ff.chunk.css.map",
+    "static/js/2.2cc1b66c.chunk.js.LICENSE.txt": "/static/js/2.2cc1b66c.chunk.js.LICENSE.txt",
+    "static/media/kaboom.mp3": "/static/media/kaboom.45697063.mp3",
+    "static/media/sploosh.mp3": "/static/media/sploosh.1e61fa55.mp3",
+    "static/media/index.css": "/static/media/submarine.f1055bbd.jpg",
+    "static/media/victory.mp3": "/static/media/victory.344b5d23.mp3"
   },
   "entrypoints": [
-    "static/js/runtime-main.9e463cc9.js",
-    "static/js/2.f47761fb.chunk.js",
-    "static/css/main.e043a7c1.chunk.css",
-    "static/js/main.01a7e141.chunk.js"
+    "static/js/runtime-main.02638610.js",
+    "static/js/2.2cc1b66c.chunk.js",
+    "static/css/main.73f103ff.chunk.css",
+    "static/js/main.f6d74d75.chunk.js"
   ]
 }
