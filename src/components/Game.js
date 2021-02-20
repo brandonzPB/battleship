@@ -56,7 +56,7 @@ const Game = () => {
       });
 
       toggleCheck();
-    }, 50); // 1400
+    }, 1400);
 
     return () => clearTimeout(timer);
   }, [turn]);
@@ -68,7 +68,7 @@ const Game = () => {
         else if (isOver === 'loser') setResults('loser');
 
       toggleLoading();
-    }, 100); // 1800
+    }, 1800);
   }, [check]);
 
   const getNextPlayer = id => {
