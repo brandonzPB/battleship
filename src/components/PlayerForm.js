@@ -5,6 +5,8 @@ import { gameBoard, getShipPlacements } from '../modules/gameBoard';
 
 import './playerForm.css';
 
+const randomNames = ['Captain Morgan', 'El Capitán', 'Admiral Nelson', 'Blackbeard', 'Hook'];
+
 const PlayerForm = () => {
   const [player, setPlayer] = useState('');
   const { game, dispatch, winner } = useContext(GameContext);
@@ -12,6 +14,10 @@ const PlayerForm = () => {
   const handleChange = (event) => {
     setPlayer(event.target.value);
   }
+
+  const [randIndex, setRandIndex] = useState({
+    index: Math.floor(Math.random() * 5)
+  });
 
   const addPlayer = (event) => {
     event.preventDefault();
@@ -31,6 +37,11 @@ const PlayerForm = () => {
         personalTiles,
         enemyTiles
       }
+    });
+
+    setRandIndex({
+      ...randIndex,
+      index: Math.floor(Math.random() * 5)
     });
 
     setPlayer('');
@@ -59,7 +70,7 @@ const PlayerForm = () => {
           name="player"
           value={player}
           onChange={handleChange}
-          placeholder='Captain Morgan'
+          placeholder={randomNames[randIndex.index]}
           className="name-input"
         />
         <button className="submit-form-btn">Submit</button>
