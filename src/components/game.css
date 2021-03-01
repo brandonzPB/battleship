@@ -1,3 +1,15 @@
+@keyframes fadeout {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+
 .game-container {
   font-family: 'Black Ops One', cursive;
   color: white;
@@ -5,6 +17,18 @@
   margin: 10rem auto 0 auto;
   height: auto;
   width: 100%;
+}
+
+#hit-result-text {
+  font-size: 8rem;
+  color: red;
+  font-family: 'Black Ops One', cursive;
+  margin: 0 auto;
+  display: block;
+}
+
+.animated-text {
+  animation: fadeout 1s;
 }
 
 .tile-container { /* Contains both the enemy map and the personal map */

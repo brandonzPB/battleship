@@ -13,7 +13,7 @@ const kaboomSound = new Audio(kaboomSrc);
 const splooshSrc = require('../audio/sploosh.mp3');
 const splooshSound = new Audio(splooshSrc);
 
-const EnemyMap = ({ thisPlayer, thisEnemy, nextTurn, winner }) => {
+const EnemyMap = ({ thisPlayer, thisEnemy, nextTurn, winner, text, setText }) => {
   const { sinkTile, missedShot } = useContext(GameContext);
   const numberArr = numArr();
 
@@ -32,6 +32,14 @@ const EnemyMap = ({ thisPlayer, thisEnemy, nextTurn, winner }) => {
       // occupied by active ship tile
       console.log('hit');
 
+      const text = document.getElementById('hit-result-text');
+      text.classList.add('animated-text');
+
+      setText({
+        ...text,
+        content: 'KABOOM!!'
+      });
+
       kaboomSound.load();
         kaboomSound.currentTime = 0;
         kaboomSound.play();
@@ -41,6 +49,14 @@ const EnemyMap = ({ thisPlayer, thisEnemy, nextTurn, winner }) => {
     } else if (enemyPTile[0].isFree && !playTile[0].isHit && !playTile[0].isSplash) {
       // not occupied by anything
       console.log('splash');
+
+      const text = document.getElementById('hit-result-text');
+      text.classList.add('animated-text');
+
+      setText({
+        ...text,
+        content: 'SPLOOSH!'
+      });
 
       splooshSound.load();
         splooshSound.currentTime = 0;

@@ -13,6 +13,8 @@ const Game = () => {
   const [turn, setTurn] = useState(0);
   const [check, setCheck] = useState(false);
 
+  const [text, setText] = useState({ content: '' });
+
   const [winner, setWinner] = useState({
     id: ''
   });
@@ -55,8 +57,16 @@ const Game = () => {
         enemysPersonalTiles: enemyInfo[0].personalTiles
       });
 
+      setText({
+        ...text,
+        content: ''
+      });
+
+      const resultText = document.getElementById('hit-result-text');
+      resultText.classList.remove('animated-text');
+
       toggleCheck();
-    }, 1400);
+    }, 600);
 
     return () => clearTimeout(timer);
   }, [turn]);
@@ -68,7 +78,7 @@ const Game = () => {
         else if (isOver === 'loser') setResults('loser');
 
       toggleLoading();
-    }, 1800);
+    }, 800);
   }, [check]);
 
   const getNextPlayer = id => {
@@ -118,6 +128,8 @@ const Game = () => {
   return (
     <div className="game-container">
 
+      <span id="hit-result-text">{text.content}</span>
+
       {
         loading ?
           <Loading /> :
@@ -134,6 +146,8 @@ const Game = () => {
                 nextTurn={nextTurn}
                 winner={winner}
                 loser={loser}
+                text={text}
+                setText={setText}
               />
             </div>
           </div>
